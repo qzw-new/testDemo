@@ -1,0 +1,71 @@
+（用的多）git bash	支持linux命令的控制台
+  （用得少）git CMD    支持windows命令的控制台
+git GUI git可视化界面（操作不是很方便） 、
+
+
+
+git push origin(远端链接的名字) master（分支的名字） -u（表示设置好origin,master,下次可以 不再输入了）
+本地文件提交到服务器上。
+git clone 地址 新目录名
+
+vim 文件名      （修改内容）
+
+git status （看状态）
+
+git add 文件名
+
+（ git add 在git status后就变成这样子）
+	On branch master
+
+	No commits yet
+
+	Changes to be committed:
+ 	 (use "git rm --cached <file>..." to unstage)
+      		  new file:   README.md
+
+git add 加到暂存区，然后commit push：
+	git add README.md
+	git commit -m "modify README.md"
+	git push
+	（但这个时候本地是旧的代码，远程是新的代码，
+		要将远程的拉到本地上）
+	用git pull  
+	或者git pull origin(远端链接的名字) master（分支的名字）
+git checkout 还原在 上一个状态中
+
+cd ..返回上一级
+
+
+
+
+LTB版本：
+	
+远程上的分支Remote Tracking
+远程上git仓库的地址
+
+在Branches下面有（Local 和 Remote Tracking）在 Remote Tracking里面点create branch 就会要那个分支跑到本地里面了。
+远程里面每个人有一个自己的分支，除了主干master分支和development分支.
+自己的  ---> development  --> master
+
+在分支上面的总文件夹（视频里面叫alphaj-asset）右击Fetch from Upstream
+作用：更新远程分支的内容（别人改好了的可以进行更新）
+
+在local里面，选择和下面Remote Tracking相对应的分支，右击rebase,,这部分就对应更新了（总的）。
+再去rebase一次local里面分的，这样local里面总的  的内容就更新到分的了。
+
+遇到nevigate或者package explor报错的话。
+
+打开windows里面的show view others 里面git staging 来找到报错的东西。
+
+
+现在就要***解决冲突***，解决好之后拉到下面，从unstaged拉到staged。并且备注。
+
+
+之后就可以push到远程服务器上面了。
+
+
+bilibili：
+git操作步骤：
+见word
+
+
